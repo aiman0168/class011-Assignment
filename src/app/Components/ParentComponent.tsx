@@ -30,9 +30,10 @@ function ParentComponent(){
    ];
   return (
     <div>
-      {cars.map((car) => {
+      {cars.map((car, index) => {
         return(
           <ChildComponent
+          key={index}
           carImage={car.carImage}
           carName={car.carName}
           carPrice={car.carPrice}
