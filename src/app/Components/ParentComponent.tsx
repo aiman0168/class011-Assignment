@@ -30,7 +30,7 @@ function ParentComponent(){
    ];
   return (
     <div>
-      {cars.map((car => {
+      {cars.map((car) => {
         return(
           <ChildComponent
           carImage={car.carImage}
@@ -39,7 +39,7 @@ function ParentComponent(){
           carReviews={car.carReviews}
           />
         )
-      }))}
+      })}
     </div>
    )
 }
